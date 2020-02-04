@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Honk",
+    "version": "1.0",
+
+    "description": "DuckDuckGo is great and all... but it needs more HONK!",
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.duckduckgo.com/*"],
+            "js": ["enable-honk.js"]
+        }
+    ]
+}
